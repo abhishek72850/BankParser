@@ -1,0 +1,43 @@
+To Create New User and Generate New Token
+
+curl -X POST -H "Content-Type:application/json" -d @create.json https://bankparser.herokuapp.com/api/user/registration/
+
+------------------------------------------------------------------------------------------------------------------
+To Login and get Token
+
+curl -X POST -H "Content-Type:application/json" -d @login.json https://bankparser.herokuapp.com/api/user/login/
+
+------------------------------------------------------------------------------------------------------------------
+
+To Logout
+
+curl -X POST https://bankparser.herokuapp.com/api/user/logout/
+
+------------------------------------------------------------------------------------------------------------------
+
+To Refresh Token
+
+curl -X POST -H "Content-Type:application/json" -d @refresh.json https://bankparser.herokuapp.com/api/user/refresh/
+
+------------------------------------------------------------------------------------------------------------------
+
+GET API to fetch a bank details, given branch IFSC code
+
+curl -H "Authorization: JWT <token>" "https://bankparser.herokuapp.com/fetchbyifsc/?ifsc=<IFSC_CODE>"
+
+------------------------------------------------------------------------------------------------------------------
+
+GET API to fetch all details of branches, given bank name and a city
+
+curl -H "Authorization: JWT <token>" "https://bankparser.herokuapp.com/fetchbyname/?name=<STATE_NAME>&city=<CITY_NAME>
+&limit=<LIMIT>&offset=<OFFSET>"
+
+*Note : limit and offset are optional field
+
+	limit : default value 1000
+	offset : default value 0
+
+------------------------------------------------------------------------------------------------------------------
+
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNTc2Njc1MDg4LCJlbWFpbCI6IiJ9.
+Dc9sch0zxuz9UR1yrapXJZHR1laxVCdB-GEIeEhhZz4
