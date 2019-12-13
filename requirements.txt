@@ -9,7 +9,6 @@ django-rest-auth==0.9.5
 djangorestframework==3.10.3
 djangorestframework-jwt==1.11.0
 djangorestframework-simplejwt==4.4.0
-dlib==19.18.0
 gunicorn==20.0.4
 mccabe==0.6.1
 mysql-connector==2.2.9
