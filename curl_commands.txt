@@ -1,3 +1,22 @@
+How to use:
+
+Step 1: Create new User 
+	by editing the credentials of create.json
+	or just use the default login.json file to login
+	using below given curl command and skip to Step 3
+
+Step 2: Login using the same username,password
+	by editing login.json which you have registered with
+	in Step 1.
+
+Step 3: Now you can access the GET API using the 
+	token generated in previous Step.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+*Note: check content of all json files in the git repo
+
 To Create New User and Generate New Token
 
 curl -X POST -H "Content-Type:application/json" -d @create.json https://bankparser.herokuapp.com/api/user/registration/
@@ -29,7 +48,7 @@ curl -H "Authorization: JWT <token>" "https://bankparser.herokuapp.com/fetchbyif
 
 GET API to fetch all details of branches, given bank name and a city
 
-curl -H "Authorization: JWT <token>" "https://bankparser.herokuapp.com/fetchbyname/?name=<STATE_NAME>&city=<CITY_NAME>
+curl -H "Authorization: JWT <token>" "https://bankparser.herokuapp.com/fetchbyname/?name=<BANK_NAME>&city=<CITY_NAME>
 &limit=<LIMIT>&offset=<OFFSET>"
 
 *Note : limit and offset are optional field
@@ -38,6 +57,3 @@ curl -H "Authorization: JWT <token>" "https://bankparser.herokuapp.com/fetchbyna
 	offset : default value 0
 
 ------------------------------------------------------------------------------------------------------------------
-
-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNTc2Njc1MDg4LCJlbWFpbCI6IiJ9.
-Dc9sch0zxuz9UR1yrapXJZHR1laxVCdB-GEIeEhhZz4
