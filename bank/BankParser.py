@@ -3,10 +3,10 @@ import psycopg2
 
 class BankParser:
 
-	DATABASE = "fyle"
-	USER = "postgres"
-	PASSWORD = "alexkay728"
-	HOST = "127.0.0.1"
+	DATABASE = "d6iiurrj93cdga"
+	USER = "ignlqekswdumwx"
+	PASSWORD = "d763aa9e26435f99760724cbea009b21adcc1976d22c94af811b92b1440fe26d"
+	HOST = "ec2-54-227-251-33.compute-1.amazonaws.com"
 	PORT = "5432"
 
 	def __init__(self):
