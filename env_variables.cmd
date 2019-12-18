@@ -1,0 +1,6 @@
+setx DATABASE = "d6iiurrj93cdga"
+setx USER = "ignlqekswdumwx"
+setx PASSWORD = "d763aa9e26435f99760724cbea009b21adcc1976d22c94af811b92b1440fe26d"
+setx HOST = "ec2-54-227-251-33.compute-1.amazonaws.com"
+setx PORT = "5432"
+setx SECRET_KEY = "abhishek"

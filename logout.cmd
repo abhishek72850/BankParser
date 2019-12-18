@@ -1,0 +1,1 @@
+curl -X POST https://bankparser.herokuapp.com/api/user/logout/
