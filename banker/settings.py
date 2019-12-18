@@ -185,4 +185,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/'
+STATIC_ROOT = path.join(BASE_DIR,'static')
